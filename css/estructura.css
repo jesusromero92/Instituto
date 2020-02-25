@@ -1,4 +1,4 @@
-body{margin: 0;padding: 0;}
+body{margin: 0;padding: 0;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
 header{height: 100px; background-color: cornflowerblue;}
 nav{height: 50px; background-color: white;}
 #contenedor{padding:0;margin: 0;background-color: white;}
@@ -28,16 +28,33 @@ article{height: 200px;}
     margin-left: 25%;
     width: 50%;
 }
-.der h1{
+.der h4{
     text-align: center;
+    padding-top: 8px;
 }
-.calendario{
+div.calendario{
     background-color: white;
     padding-right: 5px;
     margin: 0;
     padding: 0;
+    border-radius: 3px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.1);
+}
+.mapa{
+    margin-top: 50px;
+    border-radius: 3px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.1);
 }
 
+div.titulo{
+    background-color: #3E5062;
+    color: white;
+    height: 35px;
+    text-align: center;
+    margin-bottom: 10px;
+    border-radius: 3px 3px 3px 3px;
+    box-shadow: 3px 3px 3px 3px rgb(189, 185, 185);
+}
 /*PIE PAGINA*/
 
 .piepagina{height: 10px;

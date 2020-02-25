@@ -1,9 +1,11 @@
-
 body{
 	padding: 0;
 	margin: 0%;
 	overflow-x: auto;
 	overflow-y: auto;
+}
+ul#menu{
+	margin-left: 4%;
 }
 .rayitas{
 	display: none;
@@ -15,12 +17,15 @@ ul {
 }
 .nombre{
 	font-size: 12px;
+	border-left: solid 3px gray;
 }
 /*Crea la listahorizontal con espacio*/
 li {
 	display:inline-block;
 	float: left;
 	width: 16%;
+	border-right: gray 3px solid;
+	border-bottom: gray 3px solid;
 
 }
 img{
@@ -43,6 +48,9 @@ li a {
 /* estados hover de los link */
 li:hover a {
 	background: #19c589;
+}
+li.nombre:hover a{
+	background-color: red;
 }
 
 /* estilos del dropdown */
@@ -135,11 +143,17 @@ input[type=checkbox]:checked ~ #menu{
 		top:0;
 
 	}
+	ul#menu{
+		margin: 0;
+	}
 	/*Hace que el dropdown links aparescan en linea */
 	ul {
 		display: none;
-		padding: 0;
 		position: fixed;
+		padding: 0;
+		width: 100%;
+		border-right: none;
+		margin:0;
 
 	}
 
