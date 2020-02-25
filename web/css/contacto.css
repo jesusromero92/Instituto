@@ -6,6 +6,11 @@ footer{height: 60px;background-color: #F7F4EF;}
 article{height: 200px;}
 
 
+.piepagina{height: 10px;
+background-color: #3EBF93;
+margin: 0;
+border: none;
+}
 
 .fondo{
     padding-right: 10px;
@@ -37,39 +42,6 @@ article{height: 200px;}
     margin: 0;
     padding: 0;
 }
-
-/*PIE PAGINA*/
-
-.piepagina{height: 10px;
-    background-color: #3EBF93;
-    margin: 0;
-    border: none;
-    }
-    
-.logo{
-    width: 60%;
-}
-
-.logo0{
-    padding-top: 5px;
-    width: 25px;
-    height: 25px;
-}
-.logo1{
-    padding-top: 5px;
-    width: 25px;
-    height: 25px;
-}
-.logo2{
-    padding-top: 5px;
-    width: 25px;
-    height: 25px;
-}
-.pie{
-    margin-left: 50%;
-    padding-top: 10px;
-}
-
 /*Posicionamiento*/
 #contenedor{
     display: flex;
