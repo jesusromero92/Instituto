@@ -1,4 +1,3 @@
-
 body{
 	padding: 0;
 	margin: 0%;
@@ -19,9 +18,11 @@ ul {
 }
 .nombre{
 	font-size: 12px;
+	display:inline-block;
+	float: left;
 	border-left: gray 3px solid;
-	overflow:hidden;
-	}
+	border-bottom: gray 3px solid;
+
 /*Crea la listahorizontal con espacio*/
 li {
 	display:inline-block;
@@ -29,8 +30,7 @@ li {
 	width: 16%;
 	border-right: gray 3px solid;
 	border-bottom: gray 3px solid;
-	overflow:hidden;
-
+	
 
 }
 img{
@@ -39,6 +39,7 @@ img{
 /* Estilos para los link */
 li a {
 	display:block;
+	min-width:140px;
 	height: 50px;
 	text-align: center;
 	line-height: 50px;
@@ -46,9 +47,7 @@ li a {
 	color: #fff;
 	background: #6e6a6b;
 	text-decoration: none;
-        transition:all 0.5s ease;
-        overflow:hidden;
-
+    transition:all 0.5s ease;
 }
 
 /* estados hover de los link */
