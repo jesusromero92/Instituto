@@ -1,75 +1,115 @@
 body{
-    margin: 0;
+    height: 100%;
+    margin:0;
+    margin-bottom: 40px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-.logo{
-    width: 60%;
+html {
+    height: 100%;
+    min-height: 100%;
+    position: relative;
 }
-
-/*TAMAÑOS LOGOS REDES Y PIE DE PAGINA*/
-
-.logo0{
-    padding-top: 5px;
-    width: 25px;
-    height: 25px;
-}
-.logo1{
-    padding-top: 5px;
-    width: 25px;
-    height: 25px;
-}
-.logo2{
-    padding-top: 5px;
-    width: 25px;
-    height: 25px;
-}
-.separadorpie{
-    margin: 0;
-    border: none;
-    background-color: #3EBF93;
-    height: 5px;
-}
+/* PIE DE PAGINA*/
 .piepagina{
-    background-color:#F7F4EF;
+    background-color: rgb(209, 208, 206);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: white;
     text-align: center;
-    clear: both;
-    width: 100.9%;
- }
+    border-top: 5px solid #3EBF93;
+    display: block;
+}
+p {
+    text-align: center;
+    color: rgb(121, 121, 121);
+    margin: 0;
+    padding: 0;
+    font-size: 16px
+}
+/*REDES SOCIALES*/
+.logo0 {
+    padding-top: 5px;
+    width: 25px;
+    height: 25px;
+    
+}
 
- /*HERO IMAGE*/
-
-.hero-image { 
-    height: 50%;
-    width: 100.9%;
+.logo1 {
+    padding-top: 5px;
+    width: 25px;
+    height: 25px;
+    
+}
+.logo2 {
+    padding-top: 5px;
+    width: 25px;
+    height: 25px;
+   
+}
+/*HERO IMAGE*/
+.fondo {
+    background-image: url("../Imagenes/pizarra.jpg");
+    height: 100%;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-  }
-  .hero-text {
-    text-align: center;
+    background-size: auto;
+}
+.hero-image {
+    margin: auto;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+
+}
+.hero-text {
+    text-align: center;
+    position: relative;
+    top: 50%;
+    left: 90%;
+    transform: translate(-50%, -50%);
     color: white;
+}
+.miLogo {
+    background-image: url("../Imagenes/logo.png");
+    background-size: cover;
+    width: 350px;
+    height: 350px;
+   display: block;
+   float: left;
+}
+    /*BOTON*/
+.hero-text button {
+    border: none;
+    border-radius: 7px;
+    outline: 0;
+    display: inline-block;
+    padding: 10px 25px;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    animation-name: boton;
+    animation-duration: 3s;  
+    animation-fill-mode: forwards;
   }
-
-  /*LINK HACIA LA WEB */
-
-  .nombre{
+  
+  @keyframes boton {
+    from {top: 0px;}
+    to {top: 200px; background-color: rgb(104, 104, 104);}
+  }
+ 
+ .nombre {
     text-align: center;
     text-decoration: none;
-    color: #F7F4EF;
-    font-size: 40px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(75%, -22%);
-    cursor: pointer;
-}
-/*AL PASAR SOBRE EL LINK*/
-
-.nombre:hover{
     color: #3EBF93;
-}
+    cursor: pointer;
+}  
+      
+ .hero-text button:hover {
+    background-color: rgb(68, 68, 68);
+    box-shadow: 0 17px 23px 0 rgba(255, 255, 255, 0.3),0 23px 58px 0 rgba(255, 255, 255, 0.25);
+     }    
+      
+  
