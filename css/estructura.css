@@ -11,6 +11,21 @@ article{height: 200px;}
     padding-right: 10px;
     margin-left: 52px;
 }
+.Tablon{
+  color:grey;
+  text-align: center;
+  padding-top: 10px;
+}
+div.titulo{
+    background-color: #3E5062;
+    color: white;
+    height: 35px;
+    text-align: center;
+    margin-bottom: 10px;
+    border-radius: 3px 3px 3px 3px;
+    box-shadow: 3px 3px 3px 3px rgb(189, 185, 185);
+}
+
 .contenido{
     width: 90%;
     height: auto;
@@ -20,6 +35,12 @@ article{height: 200px;}
     display: block;
     float: left;
 }
+.foto{
+  width: 450px;
+  height: 300px;
+  padding-left: 25%;
+}
+
 .der iframe{
     border: 0;
     width: 100%;
@@ -126,6 +147,3 @@ main{
         display: none;
     }
 }
-
-
-
