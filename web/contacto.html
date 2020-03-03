@@ -39,49 +39,48 @@
 							<h4>Formulario de contacto</h4>
 						</div>
 						<div class="formulario">
-							<form>
+							<form autocomplete="off" action="formulario" method="post">
 							<div class="fondoformulario">
 								<fieldset>
 									<div class="legend">
-										<legend><span>Datos Personales </span></legend>
+										<legend><span for="nombre">Datos Personales </span></legend>
 									</div>
 									<div>
-										
-										<label>Nombre *</label>
-										<input type="text" placeholder="Introduce tu nombre..." required class="form-control" name="nombre">
+										<label for="nombre">Nombre *</label>
+										<input id="nombre" type="text" placeholder="Introduce tu nombre..." name="nombre">
 									</div>
 									<div>
-										<label>Apellidos *</label>
-										<input type="text" placeholder="Introduce tus apellidos..." required class="form-control" name="apellidos">
+										<label for="apellidos">Apellidos *</label>
+										<input  id="apellidos" name="apellidos" type="text" placeholder="Introduce tus apellidos..." >
 									</div>
 									<div>
-										<label>Email *</label>
-										<input type="mail" placeholder="Introduce tu email..." required class="form-control" name="email">
+										<label for="email">Email *</label>
+										<input id="email" type="mail" placeholder="Introduce tu email..." required class="form-control" name="email">
 									</div>
 								</fieldset>
 								  <fieldset>
 									<div class="legend">
 										<legend><span>Ubicación </span></legend>
 									</div>
-									<div class="form-group">
-										<label>Dirección *</label>
-										<input type="text" placeholder="Introduce tu dirección..." required class="form-control" name="direccion">
+									<div>
+										<label for="direccion">Dirección *</label>
+										<input id="direccion" type="text" placeholder="Introduce tu dirección..." required class="form-control" name="direccion">
 									</div>
 									<div>
-										<label>Ciudad *</label>
-										<input type="text" placeholder="Introduce tu ciudad..." required class="form-control" name="ciudad">
+										<label for="ciudad">Ciudad *</label>
+										<input id="ciudad" type="text" placeholder="Introduce tu ciudad..." required class="form-control" name="ciudad">
 									</div>
 									<div>
-										<label>Postal *</label>
-										<input type="text" placeholder="Introduce tu código postal..." required class="form-control" name="postal">
+										<label for="postal">Postal *</label>
+										<input id="postal" type="text" placeholder="Introduce tu código postal..." required class="form-control" name="postal">
 									</div>
 									<div>
-										<label>Provincia *</label>
-										<input type="text" placeholder="Introduce tu provincia..." required class="form-control" name="provincia">
+										<label for="provincia">Provincia *</label>
+										<input id="provincia" type="text" placeholder="Introduce tu provincia..." required class="form-control" name="provincia">
 									</div>
 									<div>
-										<label>País *</label>
-										<input type="text" placeholder="Introduce tu país..." required class="form-control" name="pais">
+										<label for="pais">País *</label>
+										<input id="pais" type="text" placeholder="Introduce tu país..." required class="form-control" name="pais">
 									</div>
 								  </fieldset>
 								  <fieldset>
@@ -90,14 +89,14 @@
 									</div>
 									<div>
 									<p class="otro">
-										<label>Sugerencias</label>
-										<textarea name="sugerencia" placeholder="Sugerencias"></textarea>
+										<label for="sugerencia">Sugerencias</label>
+										<textarea id="sugerencia" name="sugerencia" placeholder="Sugerencias"></textarea>
 									</p>
 									</div>
 									<div>
 									<p class="otro">
-										<label class="otro">Comentarios</label>
-										<textarea name="comentario" placeholder="Comentarios"></textarea>
+										<label for="comentario">Comentarios</label>
+										<textarea id="comentario" name="comentario" placeholder="Comentarios"></textarea>
 									</p>
 									</div>
 								  </fieldset>
