@@ -46,6 +46,7 @@ label{
     width: 80px;
     padding-bottom: 10px;
     min-width: 60px;
+    font-size: 12px;
 }
 .otro *{
     vertical-align: middle;
@@ -60,22 +61,62 @@ form{
     padding-bottom: 20px;
 }
 legend{
-    padding-bottom: 10px;
-    padding-top: 10px;
-    padding-left: 7%;
+    padding-bottom: 7px;
+    padding-top: 7px;
+}
+.legend{
+    margin-top: 10px;
+    background-color: #3E5062;
+    color: white;
+    width: 50%;
+    margin-left: 28%;
+    height: 35px;
+    text-align: center;
+    margin-bottom: 10px;
+    border-radius: 3px 3px 3px 3px;
+    box-shadow: 3px 3px 3px 3px rgb(189, 185, 185);
 }
 textarea{
     margin: 0;
     margin-left: 10px;
-    padding-left: 10px;
     height: 50px;
     width: 170px;
     resize: none;
 }
+button{padding:8px 12px;font-family:'Montserrat',sans-serif;border:2px solid #78788c;background:0;color:#5a5a6e;cursor:pointer;transition:all .3s;
+        margin-left:10%;
+}
+button:hover{background:#78788c;color:#fff}
+
 input[type=submit]{
     margin-left: 5%;
 }
+input[type=text], input[type=mail]{
+    border: none;
+    background-color: rgb(223, 219, 219);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.438);
+}
+input[type=text]:focus, input[type=mail]:focus{
+    border: none;
+    background-color: rgb(223, 219, 219);
+    border-bottom: 1px solid rgb(0, 0, 0);
+}
+input:focus, input.form-control:focus {
+
+    outline:none;
+    outline-width: 0 ;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+}
+::-webkit-input-placeholder {
+    text-align: center;
+ }
+
+
 /**/
+
+/*Barra Derecha*/
 .der h4{
     text-align: center;
     padding-top: 8px;
@@ -111,6 +152,10 @@ div.titulo{
 .tituloform h4{
     color: #3EBF93;
 }
+
+/**/
+
+
 /*PIE PAGINA*/
 
 html {
@@ -166,9 +211,12 @@ main{
     flex: 15%;
 }
 
-@media screen and (max-width : 760px){
+@media screen and (max-width : 320px){
     nav{
         display: none;
+    }
+    .contenido{
+        width: auto;
     }
 }
 

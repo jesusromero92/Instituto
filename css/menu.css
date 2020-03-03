@@ -46,8 +46,8 @@ li a {
 	color: #fff;
 	background: #6e6a6b;
 	text-decoration: none;
-        transition:all 0.5s ease;
-        overflow:hidden;
+	transition:all 0.5s ease;
+    overflow:hidden;
 
 }
 
@@ -133,6 +133,7 @@ input[type=checkbox]:checked ~ #menu{
 		display: flex;
 		background-color: #19c589;
 		height: 30px;
+		overflow: hidden;
 	}
 	.nombre{
 		border-left:none;
