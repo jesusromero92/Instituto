@@ -1,27 +1,44 @@
 
+body{
+	padding: 0;
+	margin: 0%;
+	overflow-x: auto;
+	overflow-y: auto;
+}
+ul#menu{
+	margin-left: 4%;
+	widht:100%;
+}
+.rayitas{
+	display: none;
+}
 ul {
 	list-style-type:none;
 	margin:0;
-	padding:0;
-	position: absolute;
+	position: fixed;
 }
-
+.nombre{
+	font-size: 12px;
+	border-left: gray 3px solid;
+	overflow:hidden;
+	}
 /*Crea la listahorizontal con espacio*/
 li {
-	display:block;
+	display:inline-block;
 	float: left;
-    margin-right: 1px;
-	width: 225px;
+	width: 16%;
+	border-right: gray 3px solid;
+	border-bottom: gray 3px solid;
+	overflow:hidden;
+
+
 }
 img{
-	width: 10%;
-	padding-top: 9px;
+	width: 15%;
 }
-
 /* Estilos para los link */
 li a {
 	display:block;
-	min-width:140px;
 	height: 50px;
 	text-align: center;
 	line-height: 50px;
@@ -29,17 +46,17 @@ li a {
 	color: #fff;
 	background: #6e6a6b;
 	text-decoration: none;
-  transition:all 0.5s ease;
+        transition:all 0.5s ease;
+        overflow:hidden;
 
-}
-.logo{
-	text-align: center;
-	
 }
 
 /* estados hover de los link */
 li:hover a {
 	background: #19c589;
+}
+li.nombre:hover a{
+	background-color: red;
 }
 
 /* estilos del dropdown */
@@ -80,7 +97,7 @@ ul li a:hover + .hidden, .hidden:hover {
 }
 
 /* Estilo de .muestra-menu */
-.show-menu {
+.menu {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	text-decoration: none;
 	color: #fff;
@@ -89,6 +106,12 @@ ul li a:hover + .hidden, .hidden:hover {
 	padding: 10px 0;
 	display: none;
   transition:all 0.5s ease;
+  width: 30px;
+  margin:0;
+  padding: 0;
+  text-align: center;
+  margin-left: 50%;
+  
 }
 
 
@@ -106,24 +129,62 @@ input[type=checkbox]:checked ~ #menu{
 /* estilos responsive */
 
 @media screen and (max-width : 760px){
+	.rayitas{
+		display: flex;
+		background-color: #19c589;
+		height: 30px;
+	}
+	.nombre{
+		border-left:none;
+	}
+	i.icon.fa.fa-bars.fa-fw{
+		padding-top: 7px;
+	}
+	i.icon.fa.fa-bars.fa-fw:hover{
+		cursor: pointer;
+	}
+	label.menu:hover{
+		cursor: pointer;
+		background-color: black;
+	}
+	div.rayitas{
+		position: sticky;
+		top:0;
+
+	}
+	ul#menu{
+		margin: 0;
+	}
 	/*Hace que el dropdown links aparescan en linea */
 	ul {
-		position: static;
 		display: none;
+		position: fixed;
+		padding: 0;
+		width: 100%;
+		border-right: none;
+		margin:0;
+
 	}
+
 	/*Crea espacio vertical */
 	li {
-		margin-bottom: 1px;
-    }
+		position: sticky;
+	}
+	.nombre{
+		font-size: 16px;
+	}
     img{
-        width: 10%;
+		width: 40px;
     }
 	/* crea todo el menu links  ancho full */
 	ul li, li a {
 		width: 100%;
 	}
 	/*Display '.muestra-menu' link*/
-	.show-menu {
+	.menu {
 		display:block;
+	}
+	.der{
+		display: none;
 	}
 }
