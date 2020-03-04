@@ -13,7 +13,7 @@ article{height: 200px;}
 
 .fondo{
     padding-right: 10px;
-    margin-left: 52px;
+    margin-left: 1%;
 }
 .Tablon{
   color:grey;
@@ -153,5 +153,13 @@ main{
     }
     div.rayitas{
         width: 100%;
+    }
+    .fondo{
+        margin-left: 10px;
+        width: 50%;
+    }
+    .foto{
+        width: 50%;
+        height: 60%;
     }
 }

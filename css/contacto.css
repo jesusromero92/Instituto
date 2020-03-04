@@ -41,7 +41,8 @@ article{height: 200px;}
 fieldset{
     border: none;
 }
-label{
+.nomcampo{
+
     display: inline-block;
     width: 80px;
     padding-bottom: 10px;
@@ -70,9 +71,9 @@ legend{
 .legend{
     background-color: #3E5062;
     color: white;
-    width: 50%;
     margin-top: 10px;
-    margin-left: 28%;
+    margin-right: 10%;
+    margin-left: 10%;
     height: 35px;
     text-align: center;
     margin-bottom: 10px;
@@ -119,7 +120,7 @@ input[type=text]:focus, input[type=mail]:focus{
     border-bottom: 1px solid blue;
     color: red
 }
-label:hover{
+.nomcampo:hover{
         color: blue;
         cursor: pointer;
         transition:all .3s;
@@ -241,12 +242,20 @@ main{
     flex: 15%;
 }
 
-@media screen and (max-width : 320px){
+@media screen and (max-width : 480px){
     nav{
         display: none;
     }
     .contenido{
         width: auto;
+    }
+    .fondo{
+        margin-left: 0;
+        text-align: center;
+        margin-right: 30px;
+    }
+    label{
+        margin-top: 10px;
     }
 }
 
