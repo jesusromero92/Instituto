@@ -155,8 +155,9 @@ main{
         width: 100%;
     }
     .fondo{
-        margin-left: 10px;
-        width: 50%;
+        margin-left: 0;
+        text-align: center;
+        margin-right: 30px;
     }
     .foto{
         width: 50%;
