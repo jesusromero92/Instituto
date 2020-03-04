@@ -48,7 +48,7 @@ p {
 }
 /*HERO IMAGE*/
 .fondo {
-    background-image: url("../Imagenes/pizarra.jpg");
+    background-image: url("../imagenes/pizarra.jpg");
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
