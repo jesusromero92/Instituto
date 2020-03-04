@@ -3,8 +3,7 @@ body{
     padding: 0;
     margin-bottom: 25%;
     padding: 0;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
-header{height: 100px; background-color: cornflowerblue;}
-nav{height: 50px; background-color: white;}
+nav{height: 50px; width: 100%; background-color: white;}
 #contenedor{padding:0;margin: 0;background-color: white;}
 footer{height: 60px;background-color: #F7F4EF;}
 article{height: 200px;}
@@ -14,11 +13,6 @@ article{height: 200px;}
 .fondo{
     padding-right: 10px;
     margin-left: 1%;
-}
-.Tablon{
-  color:grey;
-  text-align: center;
-  padding-top: 10px;
 }
 div.titulo{
     background-color: #3E5062;
@@ -81,55 +75,79 @@ article{
     height: auto;
     margin-top: 10px;
 }
-
-div.titulo{
-    background-color: #3E5062;
-    color: white;
-    height: 35px;
+.tablon{
+    background: linear-gradient( rgba(136, 136, 136, 0.808),#3EBF93);
+    font-size: 12px;
+      color: white;
+      height: 35px;
+      width: 55%;
+      text-align: center;
+      margin-bottom: 7%;
+      margin-top: 55px;
+      margin-left: 25%;
+      border-radius: 3px 3px 3px 3px;
+      box-shadow: 3px 3px 3px 3px rgb(189, 185, 185);
+      padding-left: 2%;
+  }
+  h1{
     text-align: center;
-    margin-bottom: 10px;
-    border-radius: 3px 3px 3px 3px;
-    box-shadow: 3px 3px 3px 3px rgb(189, 185, 185);
-}
-
+    padding-top: 5px;
+    padding-bottom: 15px;
+  }
 /*PIE PAGINA*/
 
 html {
     position: relative;
     min-height: 100%;
   }
-footer {
- background-color: rgb(209,208,206);
- position: absolute;
- bottom: 0;
- width: 100%;
- color: white;
- border-top: 5px solid #3EBF93;
+  .piepagina{
+    background-color: #7B7B79;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+    border-top: 5px solid #3EBF93;
+    display: block;
+}
+.piepagina p {
+    text-align: center;
+    color: rgb(121, 121, 121);
+    margin: 0;
+    padding: 0;
+    font-size: 14px
+}
+/*REDES SOCIALES*/
+.logo0 {
+    padding-top: 5px;
+    width: 25px;
+    height: 25px;
+    
+}
+.logo1 {
+    padding-top: 5px;
+    width: 25px;
+    height: 25px;
+    
+}
+.logo2 {
+    padding-top: 5px;
+    width: 25px;
+    height: 25px;
+   
+}
+.logo0:hover, .logo1:hover, .logo2:hover{
+    animation: vuelta 3s infinite;
+    transform: rotate(30deg);
+}
+@keyframes vuelta {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
   }
-.logo{
-width: 60%;
-}
-.logo0{
-padding-top: 5px;
-width: 25px;
-height: 25px;
-}
-.logo1{
-padding-top: 5px;
-width: 25px;
-height: 25px;
-}
-.logo2{
-padding-top: 5px;
-width: 25px;
-height: 25px;
-}
-.pie{
-margin-left: 50%;
-padding-top: 10px;
-}
-
-
 /*Posicionamiento*/
 #contenedor{
     padding-right: 3%;
@@ -143,7 +161,25 @@ main{
 .der{
     flex: 15%;
 }
-
+@media screen and (max-width : 768px){
+        nav{
+            display: none;
+            width: 100%;
+        }
+        main{
+           padding-left: 0;
+        }
+        footer{
+            width: 100%;
+        }
+        main{
+        flex: 100%;
+    }
+    .tablon{
+        margin-top: 75px;
+    }
+        
+}
 @media screen and (max-width : 480px){
     nav{
         display: none;
@@ -163,4 +199,27 @@ main{
         width: 50%;
         height: 60%;
     }
+    .tablon{
+        margin-top: 25px;
+        font-size: 10px;
+        
+      }
+      h1{
+        text-align: center;
+        padding-top: 5px;
+        padding-bottom: 15px;
+      }
+}
+@media screen and (max-width : 320px){
+    body{
+        width: 100%;
+    }
+    main{
+       padding-left: 0;
+    }
+    .tablon{
+        margin-top: 25px;
+        font-size: 9px;
+        
+      }
 }
