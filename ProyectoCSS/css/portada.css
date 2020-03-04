@@ -46,9 +46,21 @@ p {
     height: 25px;
    
 }
+.logo0:hover, .logo1:hover, .logo2:hover{
+    animation: vuelta 3s infinite;
+    transform: rotate(30deg);
+}
+@keyframes vuelta {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
 /*HERO IMAGE*/
 .fondo {
-    background-image: url("../Imagenes/pizarra.jpg");
+    background-image: url("../imagenes/logo/pizarra.jpg");
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -70,7 +82,7 @@ p {
     color: white;
 }
 .miLogo {
-    background-image: url("../Imagenes/logo.png");
+    background-image: url("../imagenes/logo/logo.png");
     background-size: cover;
     width: 350px;
     height: 350px;

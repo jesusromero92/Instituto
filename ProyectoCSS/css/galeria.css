@@ -5,30 +5,30 @@ body{margin: 0;padding: 0;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lu
     margin-left: 52px;
 }
 .contenido{
-    width: 90%;
+    width: 100%;
     height: auto;
-    padding: 10px 10px 10px 30px;
     margin-top: 30px;
     display: block;
     float: left;
 }
 .titulo{
-    background-color: #3EBF93;
+  background: linear-gradient( rgba(136, 136, 136, 0.808),#3EBF93);
     color: white;
-    height: 35px;
+    height: 5%;
     width: 50%;
     text-align: center;
-    margin-bottom: 90px;
-    margin-top: 60px;
-    margin-left: 300px;
+    margin-bottom: 7%;
+    margin-top: 4%;
+    margin-left: 15%;
     border-radius: 3px 3px 3px 3px;
     box-shadow: 3px 3px 3px 3px rgb(189, 185, 185);
     padding-left: 2%;
 }
 h4{
+  margin-top: 65px;
     text-align: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 5px;
+    padding-bottom: 7px;
 }
 /*PIE PAGINA*/
 
@@ -77,54 +77,92 @@ body {
       height: 25px;
 
   }
-  .gallery {
-    border: 1px solid #ccc;
+  .logo0:hover, .logo1:hover, .logo2:hover{
+    animation: vuelta 3s infinite;
+    transform: rotate(30deg);
+}
+@keyframes vuelta {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  /*Galria de imagenes*/
+  .galeria {
+    width: 90%;
+    
   }
 
 
-  .gallery:hover {
-      border: 1px solid #777;
+  .galeria:hover {
+    color: #3EBF93;
+      cursor: pointer;
     }
 
-  .gallery img {
-      width: 390px;
-      height: 350px;
+  .galeria img {
+      width: 350px;
+      height: 300px;
       overflow: hidden;
       display: block;
     }
 
   .desc {
       padding: 15px;
+      margin-bottom: 10px;
       text-align: center;
     }
 
     * {
       box-sizing: border-box;
     }
-
+    .foto{
+      display: block;
+      margin: auto;
+    }
+    
   .responsive {
       padding: 0 6px;
       float: left;
-      width: 24.99999%;
+      width: 25%;
       display: block;
       overflow: hidden;
     }
-
+    /*TABLET Y MOVIL*/
     @media only screen and (max-width: 768px) {
       .responsive {
-        width: 49.99999%;
+        width: 50%;
         margin: 6px 0;
       }
+      h4{
+        margin-top: 60px;
+    }
     }
 
     @media only screen and (max-width: 425px) {
       .responsive {
-        width: 80%;
+        width: 85%;
+        display: block;
+        margin: auto;
+        padding: 25%;
       }
+      .titulo{
+        margin-bottom: 0%;
+        margin-top: 0%;
+        margin-left: 26%;
+        padding-left: 2%;
     }
-
-    .clearfix:after {
-      content: "";
-      display: table;
-      clear: both;
+    .desc {
+      width: 175%;
+      padding: 15px;
+      margin-bottom: 0;
+      text-align: center;
     }
+    .galeria img {
+      width: 228px;
+      height: 210px;
+  }
+    }
+    
+    

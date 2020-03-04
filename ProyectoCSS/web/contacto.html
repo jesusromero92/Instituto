@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="../css/menu.css">
-	<link rel="stylesheet" href="../css/Contacto.css">
+	<link rel="stylesheet" href="../css/contacto.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Contacto</title>
 </head>
@@ -16,16 +16,16 @@
 	</div>
 	<input type="checkbox" id="menu" role="button">
 		<ul id="menu">
-			<li class="nombre"><a href="#"><img src="../imagenes/logo.png" alt="">I.E.S Prueba</a></li>
+			<li class="nombre"><a href="../index.html"><img src="../imagenes/logo/logo.png" alt="">I.E.S Galdós</a></li>
 			<li><a href="inicio.html">Inicio</a></li>
 			<li>
-				<a href="#">Secretaria</a>
+				<a href="secretaria.html">Secretaria</a>
 			</li>
 			<li>
-				<a href="#">Biblioteca</a>
+				<a href="biblioteca.html">Biblioteca</a>
 			</li>
-			<li><a href="#">Matricula</a></li>
-			<li><a href="#">Contacto</a></li>
+			<li><a href="galeria.html">Galería</a></li>
+			<li><a href="contacto.html">Contacto</a></li>
 	</ul>
 
 	<!-- Estructura -->
@@ -39,63 +39,68 @@
 							<h4>Formulario de contacto</h4>
 						</div>
 						<div class="formulario">
-							<form>
+							<form autocomplete="off" action="formulario" method="post">
 							<div class="fondoformulario">
 								<fieldset>
-									<legend><span</span> Datos Personales</legend>
-									<div>
-										
-										<label>Nombre *</label>
-										<input type="text" placeholder="Introduce tu nombre..." required class="form-control" name="nombre">
+									<div class="legend">
+										<legend><span for="nombre">Datos Personales </span></legend>
 									</div>
 									<div>
-										<label>Apellidos *</label>
-										<input type="text" placeholder="Introduce tus apellidos..." required class="form-control" name="apellidos">
+										<label for="nombre" class="nomcampo">Nombre *</label>
+										<input  id="nombre" type="text" placeholder="Introduce tu nombre..." name="nombre">
 									</div>
 									<div>
-										<label>Email *</label>
-										<input type="mail" placeholder="Introduce tu email..." required class="form-control" name="email">
+										<label class="nomcampo" for="apellidos">Apellidos *</label>
+										<input  id="apellidos" name="apellidos" type="text" placeholder="Introduce tus apellidos..." >
+									</div>
+									<div>
+										<label class="nomcampo" for="email">Email *</label>
+										<input id="email" type="mail" placeholder="Introduce tu email..." required class="form-control" name="email">
 									</div>
 								</fieldset>
 								  <fieldset>
-									<legend><span</span> Ubicación</legend>
-									<div class="form-group">
-										<label>Dirección *</label>
-										<input type="text" placeholder="Introduce tu dirección..." required class="form-control" name="direccion">
+									<div class="legend">
+										<legend><span>Ubicación </span></legend>
 									</div>
 									<div>
-										<label>Ciudad *</label>
-										<input type="text" placeholder="Introduce tu ciudad..." required class="form-control" name="ciudad">
+										<label class="nomcampo" for="direccion">Dirección *</label>
+										<input  id="direccion" type="text" placeholder="Introduce tu dirección..." required class="form-control" name="direccion">
 									</div>
 									<div>
-										<label>Postal *</label>
-										<input type="text" placeholder="Introduce tu código postal..." required class="form-control" name="postal">
+										<label class="nomcampo" for="ciudad">Ciudad *</label>
+										<input id="ciudad" type="text" placeholder="Introduce tu ciudad..." required class="form-control" name="ciudad">
 									</div>
 									<div>
-										<label>Provincia *</label>
-										<input type="text" placeholder="Introduce tu provincia..." required class="form-control" name="provincia">
+										<label class="nomcampo" for="postal">Postal *</label>
+										<input id="postal" type="text" placeholder="Introduce tu código postal..." required class="form-control" name="postal">
 									</div>
 									<div>
-										<label>País *</label>
-										<input type="text" placeholder="Introduce tu país..." required class="form-control" name="pais">
+										<label class="nomcampo" for="provincia">Provincia *</label>
+										<input id="provincia" type="text" placeholder="Introduce tu provincia..." required class="form-control" name="provincia">
+									</div>
+									<div>
+										<label class="nomcampo" for="pais">País *</label>
+										<input id="pais" type="text" placeholder="Introduce tu país..." required class="form-control" name="pais">
 									</div>
 								  </fieldset>
 								  <fieldset>
-									<legend><span></span>Otros</legend>
+									<div class="legend">
+										<legend><span>Otros </span></legend>
+									</div>
 									<div>
 									<p class="otro">
-										<label>Sugerencias</label>
-										<textarea name="sugerencia" placeholder="Sugerencias"></textarea>
+										<label class="nomcampo" for="sugerencia">Sugerencias</label>
+										<textarea id="sugerencia" name="sugerencia" placeholder="Sugerencias"></textarea>
 									</p>
 									</div>
 									<div>
 									<p class="otro">
-										<label class="otro">Comentarios</label>
-										<textarea name="comentario" placeholder="Comentarios"></textarea>
+										<label class="nomcampo" for="comentario">Comentarios</label>
+										<textarea id="comentario" name="comentario" placeholder="Comentarios"></textarea>
 									</p>
 									</div>
 								  </fieldset>
-								  <input type="submit" value="Aplicar" />
+								  <button>Enviar</button>
 							</div>
 							</form>
 						  </div>
@@ -124,9 +129,9 @@
 	</div>
 	<footer>
 		<div class="pie">
-			<a href="https://es-es.facebook.com/"><img src="../imagenes\pie\logoface.png" alt="facebook" class="logo2" ></a>
-			<a href="https://twitter.com/?lang=es"><img src="../imagenes\pie\logotwitter.png" alt="facebook" class="logo1"></a>
-			<a href="https://www.instagram.com/?hl=es"><img src="../imagenes\pie\logoinsta.png" alt="facebook" class="logo0" ></a>
+			<a href="https://es-es.facebook.com/"><img src="../imagenes/pie/logoface.png" alt="facebook" class="logo2" ></a>
+			<a href="https://twitter.com/?lang=es"><img src="../imagenes/pie/logotwitter.png" alt="facebook" class="logo1"></a>
+			<a href="https://www.instagram.com/?hl=es"><img src="../imagenes/pie/logoinsta.png" alt="facebook" class="logo0" ></a>
 		</div>
 	</footer>
 </body>

@@ -1,5 +1,4 @@
 body{margin: 0;padding: 0;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
-header{height: 100px; background-color: cornflowerblue;}
 nav{height: 50px; background-color: white;}
 #contenedor{padding:0;margin: 0;background-color: white;}
 footer{height: 60px;background-color: #F7F4EF;}
@@ -36,16 +35,18 @@ article{height: 200px;}
     background-color: rgb(223, 219, 219);
 }
 .tituloform{
-    padding-left: 45%;
+    padding-left: 46%;
 }
 fieldset{
     border: none;
 }
-label{
+.nomcampo{
+
     display: inline-block;
     width: 80px;
     padding-bottom: 10px;
     min-width: 60px;
+    font-size: 12px;
 }
 .otro *{
     vertical-align: middle;
@@ -57,25 +58,91 @@ label{
 }
 form{
     padding-top: 10px;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
 }
 legend{
-    padding-bottom: 10px;
-    padding-top: 10px;
-    padding-left: 7%;
+    padding-bottom: 7px;
+    padding-top: 7px;
+}
+.prueba{
+    margin-bottom: 30px;
+}
+.legend{
+    background-color: #3E5062;
+    color: white;
+    margin-top: 10px;
+    margin-right: 10%;
+    margin-left: 10%;
+    height: 35px;
+    text-align: center;
+    margin-bottom: 10px;
+    border-radius: 3px 3px 3px 3px;
+    box-shadow: 3px 3px 3px 3px rgb(189, 185, 185);
+}
+.legend:hover{
+    animation: roll 3s infinite;
+    transform: rotate(30deg);
+    background: linear-gradient(180deg,#ff8a00,#e52e71);
 }
 textarea{
     margin: 0;
     margin-left: 10px;
-    padding-left: 10px;
     height: 50px;
     width: 170px;
     resize: none;
+    border: none;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -o-border-radius: 4px;
 }
-input[type=submit]{
-    margin-left: 5%;
+button{padding:8px 12px;
+    font-family:'Montserrat',sans-serif;
+    border:2px solid #78788c;
+    background:0;
+    color:#5a5a6e;
+    cursor:pointer;
+    transition:all .3s;
+    margin-left:7%;
+    margin-bottom: 10px;
 }
+button:hover{background:#78788c;
+    color:#fff}
+
+input[type=text], input[type=mail]{
+    border: none;
+    background-color: rgb(223, 219, 219);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.438);
+}
+input[type=text]:focus, input[type=mail]:focus{
+    border: none;
+    background-color: rgb(223, 219, 219);
+    border-bottom: 1px solid blue;
+    color: red
+}
+.nomcampo:hover{
+        color: blue;
+        cursor: pointer;
+        transition:all .3s;
+        font-size: 14px;
+}
+
+input:focus, input.form-control:focus, textarea {
+
+    outline:none;
+    outline-width: 0 ;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+}
+::-webkit-input-placeholder {
+    text-align: center;
+    padding-top: 13px;
+ }
+
+
 /**/
+
+/*Barra Derecha*/
 .der h4{
     text-align: center;
     padding-top: 8px;
@@ -108,9 +175,30 @@ div.titulo{
     border-radius: 3px 3px 3px 3px;
     box-shadow: 3px 3px 3px 3px rgb(189, 185, 185);
 }
-.tituloform h4{
-    color: #3EBF93;
-}
+.tituloform {
+    
+        background: linear-gradient( rgba(136, 136, 136, 0.808),#3EBF93);
+          color: white;
+          height: 35px;
+          width: 55%;
+          text-align: center;
+          margin-bottom: 7%;
+          margin-top: 4%;
+          margin-left: 25%;
+          border-radius: 3px 3px 3px 3px;
+          box-shadow: 3px 3px 3px 3px rgb(189, 185, 185);
+          padding-left: 2%;
+        }
+      h4{
+        text-align: center;
+        padding-top: 5px;
+        padding-bottom: 15px;
+      }
+
+
+/**/
+
+
 /*PIE PAGINA*/
 
 html {
@@ -147,11 +235,15 @@ padding-top: 5px;
 width: 25px;
 height: 30px;
 }
+.logo0:hover, .logo1:hover, .logo2:hover{
+    animation: roll 3s infinite;
+    transform: rotate(30deg);
+}
 .pie{
     margin-left: 50%;
     padding-top: 10px;
     }
-
+  
 /*Posicionamiento*/
 #contenedor{
     display: flex;
@@ -166,11 +258,41 @@ main{
     flex: 15%;
 }
 
-@media screen and (max-width : 760px){
+@media screen and (max-width : 480px){
     nav{
         display: none;
     }
+    .contenido{
+        width: auto;
+    }
+    .fondo{
+        margin-left: 0;
+        text-align: center;
+        margin-right: 30px;
+    }
+    label{
+        margin-top: 10px;
+    }
+    .tituloform{
+        font-size: 13px;
+    }
+}
+@media screen and (max-width : 768px){
+    .tituloform{
+        font-size: 13px;
+    }
+}
+@media screen and (max-width : 320px){
+    main{
+       padding-left: 0;
+    }
 }
 
-
-
+@keyframes roll {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
