@@ -7,7 +7,7 @@ body{
 }
 ul#menu{
 	margin-left: 4%;
-	widht:100%;
+	width: 90%;
 }
 .rayitas{
 	display: none;
@@ -155,6 +155,7 @@ input[type=checkbox]:checked ~ #menu{
 	}
 	ul#menu{
 		margin: 0;
+		width: 100%;
 	}
 	/*Hace que el dropdown links aparescan en linea */
 	ul {
