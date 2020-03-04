@@ -1,4 +1,4 @@
-body{margin: 0;padding: 0;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
+body{margin: 0;padding: 0;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
 #contenedor{padding:0;margin: 0;background-color: white;}
 .fondo{
     padding-right: 10px;
@@ -87,8 +87,6 @@ html {
     width: 90%;
     
   }
-
-
   .pinchar:hover {
     color: #3EBF93;
       cursor: pointer;
@@ -120,16 +118,21 @@ html {
       margin: auto;
     }
     
-  .responsive {
+  .caja {
       padding: 0 6px;
       float: left;
       width: 25%;
       display: block;
       overflow: hidden;
+      transition-duration: 0.4s;
+   
+    }
+    .sombra:hover{
+      box-shadow: 2px 2px 2px 2px rgba(146, 146, 146, 0.3),0 10px 10px 0 rgba(117, 117, 117, 0.315);
     }
     /*TABLET Y MOVIL*/
     @media only screen and (max-width: 767px) {
-      .responsive {
+      .caja {
         width: 50%;
         margin: 6px 0;
       }
@@ -140,7 +143,7 @@ html {
     }
 
     @media only screen and (max-width: 425px) {
-      .responsive {
+      .caja {
         width: 85%;
         display: block;
         margin: 0 auto;
