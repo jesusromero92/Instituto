@@ -1,4 +1,4 @@
-body{margin: 0;padding: 0;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
+body{margin: 0;padding: 0;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
 #contenedor{padding:0;margin: 0;background-color: white;}
 .fondo{
     padding-right: 10px;
@@ -6,8 +6,7 @@ body{margin: 0;padding: 0;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lu
 }
 .contenido{
     width: 100%;
-    height: auto;
-    margin-top: 30px;
+    margin: auto;
     display: block;
     float: left;
 }
@@ -17,9 +16,7 @@ body{margin: 0;padding: 0;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lu
     height: 5%;
     width: 50%;
     text-align: center;
-    margin-bottom: 7%;
-    margin-top: 4%;
-    margin-left: 15%;
+    margin: 0 auto;
     border-radius: 3px 3px 3px 3px;
     box-shadow: 3px 3px 3px 3px rgb(189, 185, 185);
     padding-left: 2%;
@@ -35,10 +32,6 @@ h4{
 html {
     min-height: 100%;
     position: relative;
-  }
-body {
- margin: 0;
- margin-bottom: 25%;
   }
   /* PIE DE PAGINA*/
   .piepagina{
@@ -94,9 +87,7 @@ body {
     width: 90%;
     
   }
-
-
-  .galeria:hover {
+  .pinchar:hover {
     color: #3EBF93;
       cursor: pointer;
     }
@@ -112,6 +103,11 @@ body {
       padding: 15px;
       margin-bottom: 10px;
       text-align: center;
+      color: gray;
+    }
+    a{
+      text-decoration: none;
+      color: gray;
     }
 
     * {
@@ -122,30 +118,39 @@ body {
       margin: auto;
     }
     
-  .responsive {
+  .caja {
       padding: 0 6px;
       float: left;
       width: 25%;
       display: block;
       overflow: hidden;
+      transition-duration: 0.4s;
+   
+    }
+    .sombra:hover{
+      box-shadow: 2px 2px 2px 2px rgba(146, 146, 146, 0.3),0 10px 10px 0 rgba(117, 117, 117, 0.315);
     }
     /*TABLET Y MOVIL*/
-    @media only screen and (max-width: 768px) {
-      .responsive {
+    @media only screen and (max-width: 767px) {
+      .caja {
         width: 50%;
         margin: 6px 0;
       }
       h4{
-        margin-top: 60px;
+        margin-top: 20px;
     }
+    
     }
 
     @media only screen and (max-width: 425px) {
-      .responsive {
+      .caja {
         width: 85%;
         display: block;
-        margin: auto;
-        padding: 25%;
+        margin: 0 auto;
+        
+      }
+      .contenido{
+        margin-top: 0;
       }
       .titulo{
         margin-bottom: 0%;
@@ -154,15 +159,24 @@ body {
         padding-left: 2%;
     }
     .desc {
-      width: 175%;
       padding: 15px;
-      margin-bottom: 0;
+      margin-left: 60px;
       text-align: center;
     }
+    .galeria {
+      width: 50%;
+      margin: 0 auto;
+  }
+  h4{
+    margin-top: 20px;
+}
     .galeria img {
-      width: 228px;
+      width: 241px;
       height: 210px;
   }
     }
-    
-    
+    .clearfix:after {
+      content: "";
+      display: table;
+      clear: both;
+    }

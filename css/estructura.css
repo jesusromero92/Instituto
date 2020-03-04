@@ -5,7 +5,7 @@ body{
     padding: 0;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
 nav{height: 50px; width: 100%; background-color: white;}
 #contenedor{padding:0;margin: 0;background-color: white;}
-footer{height: 60px;background-color: #F7F4EF;}
+footer{height: 60px;}
 article{height: 200px;}
 
 
@@ -28,7 +28,7 @@ div.titulo{
     width: 90%;
     height: auto;
     background-color: rgb(250, 246, 246);
-    padding: 10px 10px 10px 30px;
+    padding: 10px 30px 10px 30px;
     margin-top: 30px;
     display: block;
     float: left;
@@ -101,7 +101,7 @@ html {
     min-height: 100%;
   }
   .piepagina{
-    background-color: #7B7B79;
+    background-color: rgb(209,208,206);
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -191,7 +191,7 @@ main{
         width: 100%;
     }
     .fondo{
-        margin-left: 0;
+        margin-left: 30px;
         text-align: center;
         margin-right: 30px;
     }
