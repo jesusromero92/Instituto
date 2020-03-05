@@ -81,7 +81,7 @@ p {
     transform: translate(-50%, -50%);
     color: white;
 }
-.miLogo {
+.milogo {
     background-image: url("../imagenes/logo/logo.png");
     background-size: cover;
     width: 350px;
@@ -120,5 +120,24 @@ p {
     background-color: rgb(68, 68, 68);
     box-shadow: 12px 17px 23px 10px rgba(0, 0, 0, 0.3),0 23px 58px 0 rgba(0, 0, 0, 0.534);
      }    
-      
-  
+ @media screen and (max-width : 768px){
+    .milogo{
+        display: block;
+        margin: 0 auto;
+        width: 230px;
+        height: 230px;
+        }
+    .hero-text{
+            font-size: 10px;
+        }
+    
+ }
+ @media screen and (max-width : 425px){
+.milogo{
+width: 230px;
+height: 230px;
+}
+.hero-text{
+    font-size: 10px;
+}
+}

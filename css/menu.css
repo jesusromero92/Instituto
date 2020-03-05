@@ -23,7 +23,7 @@ ul {
 	}
 /*Crea la listahorizontal con espacio*/
 li {
-	display:inline-block;
+	display:block;
 	float: left;
 	width: 16%;
 	border-right: gray 3px solid;
@@ -127,8 +127,7 @@ input[type=checkbox]:checked ~ #menu{
 
 /* estilos responsive */
 
-/*TABLET Y MÓVIL*/
-@media screen and (max-width : 768px){
+@media screen and (max-width : 760px){
 	.rayitas{
 		display: flex;
 		background-color: #19c589;

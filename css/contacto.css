@@ -206,7 +206,7 @@ html {
   }
 body {
  margin: 0;
- margin-bottom: 15%;
+ margin-bottom: 25%;
   }
   .piepagina{
     background-color: rgb(209, 208, 206);
@@ -278,27 +278,17 @@ main{
     flex: 15%;
 }
 
-/*Tablet*/
-
-@media screen and (max-width : 768px){
+@media screen and (max-width : 480px){
     nav{
         display: none;
     }
-    .tituloform{
-        font-size: 13px;
+    .contenido{
+        width: auto;
     }
     .fondo{
         margin-left: 0;
         text-align: center;
-        margin-right: 7%;
-    }
-}
-/**/
-
-/*Movil*/
-@media screen and (max-width : 425px){
-    main{
-        flex:none;
+        margin-right: 30px;
     }
     label{
         margin-top: 10px;
@@ -308,5 +298,15 @@ main{
     }
     .nomcampo{
         margin-top: 10px;
+    }
+}
+@media screen and (max-width : 768px){
+    .tituloform{
+        font-size: 13px;
+    }
+}
+@media screen and (max-width : 320px){
+    main{
+       padding-left: 0;
     }
 }
