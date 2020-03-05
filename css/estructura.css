@@ -161,16 +161,22 @@ main{
 .der{
     flex: 15%;
 }
+
+/*Tablet*/
 @media screen and (max-width : 768px){
         nav{
             display: none;
-            width: 100%;
         }
         main{
            padding-left: 0;
         }
         footer{
             width: 100%;
+        }
+        .fondo{
+            margin-left: 7%;
+            text-align: center;
+            margin-right: 7%;
         }
         main{
         flex: 100%;
@@ -180,20 +186,12 @@ main{
     }
         
 }
-@media screen and (max-width : 480px){
-    nav{
-        display: none;
-    }
+@media screen and (max-width : 420px){
     main{
         flex: 100%;
     }
     div.rayitas{
         width: 100%;
-    }
-    .fondo{
-        margin-left: 30px;
-        text-align: center;
-        margin-right: 30px;
     }
     .foto{
         width: 50%;
@@ -201,25 +199,18 @@ main{
     }
     .tablon{
         margin-top: 25px;
-        font-size: 10px;
-        
+        font-size: 8px;  
       }
+      .fondo{
+          margin-left: 5%;
+        margin-right: 5%;
+    }
       h1{
         text-align: center;
         padding-top: 5px;
         padding-bottom: 15px;
       }
-}
-@media screen and (max-width : 320px){
-    body{
-        width: 100%;
-    }
-    main{
-       padding-left: 0;
-    }
-    .tablon{
-        margin-top: 25px;
-        font-size: 9px;
-        
-      }
+      main{
+        padding-left: 0;
+     }
 }

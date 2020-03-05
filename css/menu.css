@@ -7,7 +7,6 @@ body{
 }
 ul#menu{
 	margin-left: 4%;
-	widht:100%;
 }
 .rayitas{
 	display: none;
@@ -128,7 +127,8 @@ input[type=checkbox]:checked ~ #menu{
 
 /* estilos responsive */
 
-@media screen and (max-width : 760px){
+/*TABLET Y MÓVIL*/
+@media screen and (max-width : 768px){
 	.rayitas{
 		display: flex;
 		background-color: #19c589;
