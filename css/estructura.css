@@ -1,0 +1,225 @@
+body{
+    margin: 0;
+    padding: 0;
+    margin-bottom: 25%;
+    padding: 0;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
+nav{height: 50px; width: 100%; background-color: white;}
+#contenedor{padding:0;margin: 0;background-color: white;}
+footer{height: 60px;}
+article{height: 200px;}
+
+
+
+.fondo{
+    padding-right: 10px;
+    margin-left: 1%;
+}
+div.titulo{
+    background-color: #3E5062;
+    color: white;
+    height: 35px;
+    text-align: center;
+    margin-bottom: 10px;
+    border-radius: 3px 3px 3px 3px;
+    box-shadow: 3px 3px 3px 3px rgb(189, 185, 185);
+}
+
+.contenido{
+    width: 90%;
+    height: auto;
+    background-color: rgb(250, 246, 246);
+    padding: 10px 30px 10px 30px;
+    margin-top: 30px;
+    display: block;
+    float: left;
+    border-top: 1px solid black;
+}
+.foto{
+  width: 350px;
+  height: 200px;
+  padding-left: 25%;
+  padding-right: 25%;
+}
+
+.der iframe{
+    border: 0;
+    width: 100%;
+    height: 200px;
+
+}
+.sepaarticulos{
+    padding-top: 30px;
+    margin-left: 25%;
+    width: 50%;
+}
+.der h4{
+    text-align: center;
+    padding-top: 8px;
+}
+div.calendario{
+    width: auto;
+    background-color: white;
+    padding-right: 5px;
+    margin: 0;
+    padding: 0;
+    border-radius: 3px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.1);
+}
+.mapa{
+    width: auto;
+    margin-top: 50px;
+    border-radius: 3px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.1);
+}
+article{
+    height: auto;
+    margin-top: 10px;
+}
+.tablon{
+    background: linear-gradient( rgba(136, 136, 136, 0.808),#3EBF93);
+    font-size: 12px;
+      color: white;
+      height: 35px;
+      width: 55%;
+      text-align: center;
+      margin-bottom: 7%;
+      margin-top: 55px;
+      margin-left: 25%;
+      border-radius: 3px 3px 3px 3px;
+      box-shadow: 3px 3px 3px 3px rgb(189, 185, 185);
+      padding-left: 2%;
+  }
+  h1{
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 15px;
+  }
+/*PIE PAGINA*/
+
+html {
+    position: relative;
+    min-height: 100%;
+  }
+  .piepagina{
+    background-color: rgb(209,208,206);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+    border-top: 5px solid #3EBF93;
+    display: block;
+}
+.piepagina p {
+    text-align: center;
+    color: rgb(121, 121, 121);
+    margin: 0;
+    padding: 0;
+    font-size: 14px
+}
+/*REDES SOCIALES*/
+.logo0 {
+    padding-top: 5px;
+    width: 25px;
+    height: 25px;
+    
+}
+.logo1 {
+    padding-top: 5px;
+    width: 25px;
+    height: 25px;
+    
+}
+.logo2 {
+    padding-top: 5px;
+    width: 25px;
+    height: 25px;
+   
+}
+.logo0:hover, .logo1:hover, .logo2:hover{
+    animation: vuelta 3s infinite;
+    transform: rotate(30deg);
+}
+@keyframes vuelta {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+/*Posicionamiento*/
+#contenedor{
+    padding-right: 3%;
+    display: flex;
+    flex-direction: row;
+}
+main{
+    flex: 80%;
+    padding-left: 3%;
+}
+.der{
+    flex: 15%;
+}
+@media screen and (max-width : 768px){
+        nav{
+            display: none;
+            width: 100%;
+        }
+        main{
+           padding-left: 0;
+        }
+        footer{
+            width: 100%;
+        }
+        main{
+        flex: 100%;
+    }
+    .tablon{
+        margin-top: 75px;
+    }
+        
+}
+@media screen and (max-width : 480px){
+    nav{
+        display: none;
+    }
+    main{
+        flex: 100%;
+    }
+    div.rayitas{
+        width: 100%;
+    }
+    .fondo{
+        margin-left: 30px;
+        text-align: center;
+        margin-right: 30px;
+    }
+    .foto{
+        width: 50%;
+        height: 60%;
+    }
+    .tablon{
+        margin-top: 25px;
+        font-size: 10px;
+        
+      }
+      h1{
+        text-align: center;
+        padding-top: 5px;
+        padding-bottom: 15px;
+      }
+}
+@media screen and (max-width : 320px){
+    body{
+        width: 100%;
+    }
+    main{
+       padding-left: 0;
+    }
+    .tablon{
+        margin-top: 25px;
+        font-size: 9px;
+        
+      }
+}
