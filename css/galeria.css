@@ -147,7 +147,6 @@ html {
     @media only screen and (max-width: 425px) {
       .caja {
         width: 85%;
-        display: block;
         margin: 0 auto;
         
       }
@@ -161,7 +160,6 @@ html {
         padding-left: 2%;
     }
     .desc {
-      padding: 15px;
       margin-left: 60px;
       text-align: center;
     }
