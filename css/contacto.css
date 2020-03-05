@@ -1,7 +1,7 @@
 body{margin: 0;padding: 0;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
 nav{height: 50px; background-color: white;}
 #contenedor{padding:0;margin: 0;background-color: white;}
-footer{height: 60px;background-color: #F7F4EF;}
+footer{height: 60px;}
 article{height: 200px;}
 
 
@@ -80,13 +80,12 @@ legend{
     box-shadow: 3px 3px 3px 3px rgb(189, 185, 185);
 }
 .legend:hover{
-    animation: roll 3s infinite;
-    transform: rotate(30deg);
     background: linear-gradient(180deg,#ff8a00,#e52e71);
 }
 textarea{
     margin: 0;
     margin-left: 10px;
+    margin-top: 10px;
     height: 50px;
     width: 170px;
     resize: none;
@@ -209,41 +208,62 @@ body {
  margin: 0;
  margin-bottom: 25%;
   }
+  .piepagina{
+    background-color: rgb(209, 208, 206);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+    border-top: 5px solid #3EBF93;
+    display: block;
+}
+.piepagina p {
+    text-align: center;
+    color: rgb(121, 121, 121);
+    margin: 0;
+    padding: 0;
+    font-size: 14px
+}
 footer {
- background-color: rgb(209,208,206);
- position: absolute;
- bottom: 0;
- width: 100%;
- color: white;
- border-top: 5px solid #3EBF93;
-  }
-.logo{
-width: 60%;
+    background-color: rgb(209,208,206);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    border-top: 5px solid #3EBF93;
+     }
+/*REDES SOCIALES*/
+.logo0 {
+    padding-top: 5px;
+    width: 25px;
+    height: 25px;
+    
 }
-.logo0{
-padding-top: 5px;
-width: 25px;
-height: 30px;
+.logo1 {
+    padding-top: 5px;
+    width: 25px;
+    height: 25px;
+    
 }
-.logo1{
-padding-top: 5px;
-width: 25px;
-height: 30px;
-}
-.logo2{
-padding-top: 5px;
-width: 25px;
-height: 30px;
+.logo2 {
+    padding-top: 5px;
+    width: 25px;
+    height: 25px;
+   
 }
 .logo0:hover, .logo1:hover, .logo2:hover{
-    animation: roll 3s infinite;
+    animation: vuelta 3s infinite;
     transform: rotate(30deg);
 }
-.pie{
-    margin-left: 50%;
-    padding-top: 10px;
+@keyframes vuelta {
+    0% {
+      transform: rotate(0);
     }
-  
+    100% {
+      transform: rotate(360deg);
+    }
+  }
 /*Posicionamiento*/
 #contenedor{
     display: flex;
@@ -276,6 +296,9 @@ main{
     .tituloform{
         font-size: 13px;
     }
+    .nomcampo{
+        margin-top: 10px;
+    }
 }
 @media screen and (max-width : 768px){
     .tituloform{
@@ -287,12 +310,3 @@ main{
        padding-left: 0;
     }
 }
-
-@keyframes roll {
-    0% {
-      transform: rotate(0);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
-  }

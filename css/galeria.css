@@ -1,4 +1,4 @@
-body{margin: 0;padding: 0;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
+body{margin: 0;padding: 0; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
 #contenedor{padding:0;margin: 0;background-color: white;}
 .fondo{
     padding-right: 10px;
@@ -11,7 +11,7 @@ body{margin: 0;padding: 0;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lu
     float: left;
 }
 .titulo{
-  background: linear-gradient( rgba(136, 136, 136, 0.808),#3EBF93);
+  background: linear-gradient( rgba(136, 136, 136, 0.808),rgba(62, 191, 148, 0.712));
     color: white;
     height: 5%;
     width: 50%;
@@ -37,9 +37,7 @@ html {
   .piepagina{
       background-color: rgb(209, 208, 206);
       position: absolute;
-      bottom: 0;
       width: 100%;
-      color: white;
       text-align: center;
       border-top: 5px solid #3EBF93;
       display: block;
@@ -124,11 +122,10 @@ html {
       width: 25%;
       display: block;
       overflow: hidden;
-      transition-duration: 0.4s;
    
     }
     .sombra:hover{
-      box-shadow: 2px 2px 2px 2px rgba(109, 109, 109, 0.3),0 10px 10px 0 rgba(87, 87, 87, 0.315);
+      box-shadow: 2px 2px 2px 2px rgba(146, 146, 146, 0.3),0 10px 10px 0 rgba(117, 117, 117, 0.315);
     }
     /*TABLET Y MOVIL*/
     @media only screen and (max-width: 767px) {

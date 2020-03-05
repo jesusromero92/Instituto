@@ -7,7 +7,6 @@ body{
 }
 ul#menu{
 	margin-left: 4%;
-	width: 90%;
 }
 .rayitas{
 	display: none;
@@ -24,7 +23,7 @@ ul {
 	}
 /*Crea la listahorizontal con espacio*/
 li {
-	display:inline-block;
+	display:block;
 	float: left;
 	width: 16%;
 	border-right: gray 3px solid;
@@ -56,7 +55,7 @@ li:hover a {
 	background: #19c589;
 }
 li.nombre:hover a{
-	background-color: rgb(38, 75, 55);
+	background-color: red;
 }
 
 /* estilos del dropdown */
@@ -155,7 +154,6 @@ input[type=checkbox]:checked ~ #menu{
 	}
 	ul#menu{
 		margin: 0;
-		width: 100%;
 	}
 	/*Hace que el dropdown links aparescan en linea */
 	ul {
