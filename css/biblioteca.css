@@ -1,7 +1,7 @@
 body{
     margin: 0;
     padding: 0;
-    margin-bottom: 25%;
+    margin-bottom: 10%;
     padding: 0;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
 nav{height: 50px; width: 100%; background-color: white;}
 #contenedor{padding:0;margin: 0;background-color: white;}
@@ -23,22 +23,31 @@ div.titulo{
     border-radius: 3px 3px 3px 3px;
     box-shadow: 3px 3px 3px 3px rgb(189, 185, 185);
 }
+.contenido h1{
+    margin-left: 30px;
+}
 
 .contenido{
     width: 90%;
     height: auto;
     background-color: rgb(250, 246, 246);
     padding: 10px 30px 10px 30px;
-    margin-top: 30px;
+    /*margin-top: 30px;*/
     display: block;
     float: left;
     border-top: 1px solid black;
 }
 .foto{
-  width: 350px;
-  height: 200px;
-  padding-left: 25%;
-  padding-right: 25%;
+    transition: transform .2s;
+    width: 350px;
+    height: 200px;
+}
+
+.foto:hover{
+    transform: scale(1.2);
+}
+.imagenes{
+    text-align: center;
 }
 
 .der iframe{
@@ -51,10 +60,6 @@ div.titulo{
     padding-top: 30px;
     margin-left: 25%;
     width: 50%;
-}
-img.iconos{
-    margin-top: 3px;
-    margin-right: 3px;
 }
 .der h4{
     text-align: center;
@@ -82,23 +87,46 @@ article{
 .tablon{
     background: linear-gradient( rgba(136, 136, 136, 0.808),#3EBF93);
     font-size: 12px;
-      color: white;
-      height: 35px;
-      width: 55%;
-      text-align: center;
-      margin-bottom: 7%;
-      margin-top: 55px;
-      margin-left: 25%;
-      border-radius: 3px 3px 3px 3px;
-      box-shadow: 3px 3px 3px 3px rgb(189, 185, 185);
-      padding-left: 2%;
+    color: white;
+    height: 35px;
+    width: 55%;
+    text-align: center;
+    margin-bottom: 7%;
+    margin-top: 55px;
+    margin-left: 20%;
+    border-radius: 3px 3px 3px 3px;
+    box-shadow: 3px 3px 3px 3px rgb(189, 185, 185);
+    padding-left: 2%;
   }
   h1{
     text-align: center;
     padding-top: 5px;
     padding-bottom: 15px;
   }
-
+.prestamo{
+    text-align: center;
+}
+.boton1 {
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+.boton1 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #008CBA;
+  }
+  
+  .boton1:hover {
+    background-color: #008CBA;
+    color: white;
+  }
 /*Posicionamiento*/
 #contenedor{
     padding-right: 3%;
@@ -135,6 +163,9 @@ main{
     .tablon{
         margin-top: 75px;
     }
+    body{
+        margin-bottom: 30%;
+    }
         
 }
 
@@ -153,6 +184,7 @@ main{
     .tablon{
         margin-top: 25px;
         font-size: 8px;  
+        margin-left: 25%;
       }
       .fondo{
           margin-left: 5%;
@@ -166,4 +198,7 @@ main{
       main{
         padding-left: 0;
      }
+     .foto:hover{
+        transform: scale(2);
+    }
 }
