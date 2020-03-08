@@ -105,7 +105,7 @@ ul li a:hover + .hidden, .hidden:hover {
 	padding: 10px 0;
 	display: none;
   transition:all 0.5s ease;
-  width: 30px;
+  /*width: 30px;*/
   margin:0;
   padding: 0;
   text-align: center;
