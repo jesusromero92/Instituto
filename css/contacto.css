@@ -2,7 +2,7 @@ body{margin: 0;margin-bottom:10%;padding: 0;font-family: 'Lucida Sans', 'Lucida 
 nav{height: 50px; background-color: white;}
 #contenedor{padding:0;margin: 0;background-color: white;}
 footer{height: 60px;}
-article{height: 200px;}
+/*article{height: 200px;}*/
 
 
 
@@ -196,6 +196,7 @@ div.titulo{
 
 
 /**/
+
 /*Posicionamiento*/
 #contenedor{
     display: flex;
@@ -213,6 +214,9 @@ main{
 /*Tablet*/
 
 @media screen and (max-width : 768px){
+    main{
+        flex:100%;
+    }
     nav{
         display: none;
     }
@@ -222,23 +226,41 @@ main{
     .fondo{
         margin-left: 0;
         text-align: center;
-        margin-right: 7%;
+        margin-right: 9%;
+    }
+    *{
+        box-sizing: unset;
     }
 }
 /**/
 
 /*Movil*/
 @media screen and (max-width : 425px){
-    main{
-        flex:none;
-    }
     label{
         margin-top: 10px;
     }
     .tituloform{
         font-size: 13px;
+        margin-left:0;
+        width: auto;
     }
     .nomcampo{
         margin-top: 10px;
+    }
+    .formulario{
+        padding-left: 0;
+    }
+    .contenido{
+        margin-left: 10%;
+        padding:0;
+    }
+    *{
+        box-sizing:inherit ;
+    }
+    .fondo{
+        margin-right: 0;
+    }
+    span{
+        font-size: 12px;
     }
 }
