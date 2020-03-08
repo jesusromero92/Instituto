@@ -139,7 +139,7 @@ main{
 }
 
 /*Movil*/
-@media screen and (max-width : 420px){
+@media screen and (max-width : 425px){
     main{
         flex: 100%;
     }
@@ -156,14 +156,12 @@ main{
       }
       .fondo{
           margin-left: 5%;
-        margin-right: 5%;
+          margin-right: 5%;
+          padding-right: 15px;
     }
       h1{
         text-align: center;
         padding-top: 5px;
         padding-bottom: 15px;
       }
-      main{
-        padding-left: 0;
-     }
 }
