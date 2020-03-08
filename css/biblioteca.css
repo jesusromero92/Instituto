@@ -153,9 +153,10 @@ main{
             width: 100%;
         }
         .fondo{
-            margin-left: 7%;
+            margin-left: 5%;
+            margin-right: 6%;
             text-align: center;
-            margin-right: 7%;
+            padding-right: 13px;
         }
         main{
         flex: 100%;
