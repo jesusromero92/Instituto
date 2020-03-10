@@ -16,24 +16,24 @@ ul {
 	margin:0;
 	position: fixed;
 }
-.nombre{
+/*.nombre{
 	font-size: 12px;
-	border-left: gray 3px solid;
-	overflow:hidden;
-	}
+	/*border-left: gray 3px solid;*/
+	/*overflow:hidden;
+	}*/
+
 /*Crea la listahorizontal con espacio*/
 li {
 	display:block;
 	float: left;
 	width: 16%;
-	border-right: gray 3px solid;
-	border-bottom: gray 3px solid;
+	/*border-right: gray 3px solid;
+	border-bottom: gray 3px solid;*/
 	overflow:hidden;
-
-
 }
+
 img{
-	width: 15%;
+	width: 10%;
 }
 /* Estilos para los link */
 li a {
@@ -54,9 +54,10 @@ li a {
 li:hover a {
 	background: #19c589;
 }
-li.nombre:hover a{
+/*li.nombre:hover a{
 	background-color: red;
-}
+}*/
+
 
 /* estilos del dropdown */
 li:hover ul a {
@@ -71,7 +72,14 @@ li:hover ul a:hover {
 	background: #19c589;
 	color: #fff;
 }
+.iconos{
+	padding-right: 4px;
+}
 
+ul.menu > li > a:active::before{
+	background: #19c589;
+	color: #fff;	
+}
 /*Oculta el dropdown*/
 li ul {
 	display: none;
@@ -105,11 +113,11 @@ ul li a:hover + .hidden, .hidden:hover {
 	padding: 10px 0;
 	display: none;
   transition:all 0.5s ease;
-  width: 30px;
+  /*width: 30px;*/
   margin:0;
   padding: 0;
   text-align: center;
-  margin-left: 50%;
+  margin-left: 47%;
   
 }
 
@@ -124,6 +132,10 @@ input[type=checkbox]:checked ~ #menu{
     display: block;
 }
 
+.destacado{
+	background: #19c589;
+	color: #fff;
+}
 
 /* estilos responsive */
 
@@ -139,6 +151,7 @@ input[type=checkbox]:checked ~ #menu{
 	}
 	i.icon.fa.fa-bars.fa-fw{
 		padding-top: 7px;
+		width: 30px;
 	}
 	i.icon.fa.fa-bars.fa-fw:hover{
 		cursor: pointer;
@@ -187,4 +200,16 @@ input[type=checkbox]:checked ~ #menu{
 	.der{
 		display: none;
 	}
+	img.iconos{
+		width:30px;
+		height: 30px;
+		margin-top: 8px;
+	}
+}
+@media screen and (max-width : 425px){
+img.iconos{
+	width: 20px;
+	height: 20px;
+	margin-top: 8px;
+}
 }

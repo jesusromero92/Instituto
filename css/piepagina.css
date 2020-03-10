@@ -1,0 +1,50 @@
+html {
+    position: relative;
+    min-height: 100%;
+  }
+  .piepagina{
+    background-color: rgb(209,208,206);
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    color: white;
+    text-align: center;
+    border-top: 5px solid #3EBF93;
+    display: block;
+}
+.piepagina p {
+    text-align: center;
+    color: rgb(121, 121, 121);
+    margin: 0;
+    padding: 0;
+    font-size: 14px
+}
+/*REDES SOCIALES*/
+.logo0 {
+    padding-top: 5px;
+    width: 27px;
+    
+}
+.logo1 {
+    padding-top: 5px;
+    width: 27px;
+    height: auto;
+    
+}
+.logo2 {
+    padding-top: 5px;
+    width: 27px;
+   
+}
+.logo0:hover, .logo1:hover, .logo2:hover{
+    animation: vuelta 3s infinite;
+    transform: rotate(30deg);
+}
+@keyframes vuelta {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
