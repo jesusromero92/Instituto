@@ -150,14 +150,15 @@ html {
         margin-top: 0;
       }
       .titulo{
-        margin-bottom: 0%;
-        margin-top: 0%;
+        margin-bottom: 0;
+        margin-top: 0;
         margin-left: 26%;
         padding-left: 2%;
     }
     .desc {
       padding: 15px;
-      margin-left: 60px;
+      margin-left: 0;
+      margin-bottom:0;
       text-align: center;
     }
     .galeria {
