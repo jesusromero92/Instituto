@@ -243,12 +243,14 @@ main{
     input{
         display:block;
         text-align: center;
-        margin-left: 60px;
+        margin-left: 15%;
         margin-bottom: 7px;
+        width: 70%;
     }
     textarea{
         display: block;
-        margin-left: 25%;
+        margin-left: 5%;
+        width: 90%;
     }
     .tituloform{
         font-size: 13px;
