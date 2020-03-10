@@ -6,7 +6,7 @@ body{
 nav{height: 50px; width: 100%; background-color: white;}
 #contenedor{padding:0;margin: 0;background-color: white;}
 footer{height: 60px;}
-article{height: 200px;}
+article{height: 200px;height: auto; margin-top: 10px;}
 
 
 
@@ -75,10 +75,7 @@ div.calendario{
     border-radius: 3px;
     box-shadow: 0 1px 3px rgba(0,0,0,.1);
 }
-article{
-    height: auto;
-    margin-top: 10px;
-}
+
 .tablon{
     background: linear-gradient( rgba(136, 136, 136, 0.808),#3EBF93);
     font-size: 12px;
@@ -120,6 +117,7 @@ main{
         }
         main{
            padding-left: 0;
+           flex: 100%;
         }
         footer{
             width: 100%;
@@ -129,20 +127,14 @@ main{
             text-align: center;
             margin-right: 7%;
         }
-        main{
-        flex: 100%;
-    }
-    .tablon{
-        margin-top: 75px;
-    }
+        .tablon{
+            margin-top: 75px;
+        }
         
 }
 
 /*Movil*/
 @media screen and (max-width : 425px){
-    main{
-        flex: 100%;
-    }
     div.rayitas{
         width: 100%;
     }
@@ -158,11 +150,5 @@ main{
           margin-left: 5%;
           margin-right: 5%;
           padding-right: 13px;
-          text-align: center;
     }
-      h1{
-        text-align: center;
-        padding-top: 5px;
-        padding-bottom: 15px;
-      }
 }
