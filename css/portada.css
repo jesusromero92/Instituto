@@ -1,0 +1,95 @@
+body{
+    height: 100%;
+    margin:0;
+    margin-bottom: 40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+html {
+    height: 100%;
+    min-height: 100%;
+    position: relative;
+}
+
+/*HERO IMAGE*/
+.fondo {
+    background-image: url("../imagenes/logo/pizarra.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+.hero-image {
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.hero-text {
+    text-align: center;
+    position: relative;
+    top: 50%;
+    left: 90%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+.milogo {
+    background-image: url("../imagenes/logo/logo.png");
+    background-size: cover;
+    width: 350px;
+    height: 350px;
+     display: block;
+    float: left;
+}
+    /*BOTON*/
+.hero-text button {
+    border: none;
+    border-radius: 7px;
+    outline: 0;
+    display: inline-block;
+    padding: 10px 25px;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+     /*ANIMACION BOTON*/
+    transition-duration: 0.4s;
+    animation-name: boton;
+    animation-duration: 3s;  
+    animation-fill-mode: forwards;
+  }
+  @keyframes boton {
+    from {top: 0px;}
+    to {top: 200px; background-color: rgb(104, 104, 104);}
+  }
+ 
+ .nombre {
+    text-align: center;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}  
+ .hero-text button:hover {
+    background-color: rgb(68, 68, 68);
+    box-shadow: 12px 17px 23px 10px rgba(0, 0, 0, 0.3),0 23px 58px 0 rgba(0, 0, 0, 0.534);
+     }    
+ @media screen and (max-width : 768px){
+    .milogo{
+        display: block;
+        margin: 0 auto;
+        width: 260px;
+        height: 260px;
+        }
+    .hero-text{
+            font-size: 12px;
+        }
+    
+ }
+ @media screen and (max-width : 425px){
+    .milogo{
+    width: 230px;
+    height: 230px;
+    }
+    .hero-text{
+        font-size: 10px;
+    }
+}

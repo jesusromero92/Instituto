@@ -1,0 +1,123 @@
+body{margin: 0;margin-bottom: 7%; padding: 0; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
+#contenedor{padding:0;margin: 0;background-color: white;}
+.fondo{
+    padding-right: 10px;
+    margin-left: 52px;
+}
+.contenido{
+    width: 100%;
+    margin: auto;
+    display: block;
+    float: left;
+}
+.titulo{
+  background: linear-gradient( rgba(136, 136, 136, 0.808),rgba(62, 191, 148, 0.712));
+    color: white;
+    height: 5%;
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 3px 3px 3px 3px;
+    box-shadow: 3px 3px 3px 3px rgb(189, 185, 185);
+    padding-left: 2%;
+    text-shadow: 2px 2px 4px #00000038;
+}
+h4{
+  margin-top: 65px;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 7px;
+}
+  /*Galeria de imagenes*/
+  .galeria {
+    width: 90%;
+    
+  }
+  .pinchar:hover {
+    color: #3EBF93;
+      cursor: pointer;
+    }
+  .galeria img {
+      width: 350px;
+      height: 300px;
+      overflow: hidden;
+      display: block;
+    }
+    /*descrpcion de las imagenes*/
+  .desc {
+      padding: 15px;
+      margin-bottom: 10px;
+      text-align: left;
+      color: gray;
+      text-shadow: 2px 2px 4px #00000038;
+    }
+    a{
+      text-decoration: none;
+      color: gray;
+    }
+    /*disposicion de las imagenes*/
+    * {
+      box-sizing: border-box;
+    }
+    .foto{
+      display: block;
+      margin: auto;
+      
+    }
+  .caja {
+      padding: 0 6px;
+      float: left;
+      width: 25%;
+      display: block;
+      overflow: hidden;
+   
+    }
+    .sombra:hover{
+      box-shadow: 2px 2px 2px 2px rgba(146, 146, 146, 0.3),0 10px 10px 0 rgba(117, 117, 117, 0.315);
+    }
+    /*TABLET Y MOVIL*/
+    @media only screen and (max-width: 767px) {
+      .caja {
+        width: 50%;
+        margin: 6px 0;
+      }
+      h4{
+        margin-top: 20px;
+      }
+    
+    }
+    @media only screen and (max-width: 425px) {
+      .caja {
+        width: 100%;
+        margin: 0 auto;
+      }
+      .contenido{
+        margin-top: 0;
+      }
+      .titulo{
+        margin-bottom: 0%;
+        margin-top: 0%;
+        margin-left: 26%;
+        padding-left: 2%;
+       }
+      .desc {
+        margin-left: 60px;
+        text-align: center;
+      }
+      .galeria {
+        width: 83%;
+        margin: 0 auto;
+      }
+      h4{
+      margin-top: 20px;
+       }
+      .galeria img {
+        width: 345px;
+        height: 234px;
+      }
+      }
+      .clearfix:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
