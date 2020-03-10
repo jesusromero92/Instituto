@@ -135,12 +135,6 @@ main{
 
 /*Movil*/
 @media screen and (max-width : 425px){
-<<<<<<< HEAD:css/inicio.css
-=======
-    main{
-        flex: 100%;
-    }
->>>>>>> fadb1fd4f69eae4fa8433c8fe8123bd09b687719:css/estructura.css
     div.rayitas{
         width: 100%;
     }
@@ -156,15 +150,5 @@ main{
           margin-left: 5%;
           margin-right: 5%;
           padding-right: 13px;
-<<<<<<< HEAD:css/inicio.css
     }
-=======
-          text-align: center;
-    }
-      h1{
-        text-align: center;
-        padding-top: 5px;
-        padding-bottom: 15px;
-      }
->>>>>>> fadb1fd4f69eae4fa8433c8fe8123bd09b687719:css/estructura.css
 }

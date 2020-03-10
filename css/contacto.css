@@ -258,12 +258,6 @@ main{
     *{
         box-sizing:inherit ;
     }
-<<<<<<< HEAD
-=======
-    .fondo{
-        margin-right: 0;
-    }
->>>>>>> fadb1fd4f69eae4fa8433c8fe8123bd09b687719
     span{
         font-size: 12px;
     }

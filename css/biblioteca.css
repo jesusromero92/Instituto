@@ -50,10 +50,7 @@ div.titulo{
     text-align: center;
 }
 
-<<<<<<< HEAD
 /*Barra Derecha*/
-=======
->>>>>>> fadb1fd4f69eae4fa8433c8fe8123bd09b687719
 .der iframe{
     border: 0;
     width: 100%;
@@ -84,11 +81,8 @@ div.calendario{
     border-radius: 3px;
     box-shadow: 0 1px 3px rgba(0,0,0,.1);
 }
-<<<<<<< HEAD
 /**/
 
-=======
->>>>>>> fadb1fd4f69eae4fa8433c8fe8123bd09b687719
 article{
     height: auto;
     margin-top: 10px;
@@ -168,7 +162,6 @@ main{
             padding-right: 13px;
         }
         main{
-<<<<<<< HEAD
             flex: 100%;
         }
         .tablon{
@@ -177,16 +170,6 @@ main{
          body{
             margin-bottom: 30%;
          }
-=======
-        flex: 100%;
-    }
-    .tablon{
-        margin-top: 75px;
-    }
-    body{
-        margin-bottom: 30%;
-    }
->>>>>>> fadb1fd4f69eae4fa8433c8fe8123bd09b687719
         
 }
 
@@ -208,10 +191,6 @@ main{
         margin-left: 25%;
       }
       .fondo{
-<<<<<<< HEAD
-=======
-          margin-left: 5%;
->>>>>>> fadb1fd4f69eae4fa8433c8fe8123bd09b687719
           margin-right: 5%;
           padding-right: 15px;
     }
@@ -220,12 +199,6 @@ main{
         padding-top: 5px;
         padding-bottom: 15px;
       }
-<<<<<<< HEAD
-=======
-      main{
-        padding-left: 0;
-     }
->>>>>>> fadb1fd4f69eae4fa8433c8fe8123bd09b687719
      .foto:hover{
         transform: scale(2);
     }
