@@ -189,10 +189,3 @@ input[type=checkbox]:checked ~ #menu{
 		display: none;
 	}
 }
-@media screen and (max-width : 425px){
-img.iconos{
-	width: 30px;
-	height: 30px;
-	margin-top: 8px;
-}
-}

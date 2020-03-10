@@ -83,6 +83,7 @@ legend{
     background: linear-gradient(180deg,#ff8a00,#e52e71);
 }
 textarea{
+    margin: 0;
     margin-left: 10px;
     margin-top: 10px;
     height: 50px;
@@ -93,8 +94,7 @@ textarea{
     -webkit-border-radius: 4px;
     -o-border-radius: 4px;
 }
-button{
-    padding:8px 12px;
+button{padding:8px 12px;
     font-family:'Montserrat',sans-serif;
     border:2px solid #78788c;
     background:0;
@@ -104,8 +104,7 @@ button{
     margin-left:7%;
     margin-bottom: 10px;
 }
-button:hover{
-    background:#78788c;
+button:hover{background:#78788c;
     color:#fff}
 
 input[type=text], input[type=mail]{
@@ -189,11 +188,11 @@ div.titulo{
           box-shadow: 3px 3px 3px 3px rgb(189, 185, 185);
           padding-left: 2%;
         }
-h4{
-    text-align: center;
-    padding-top: 5px;
-    padding-bottom: 15px;
-    }
+      h4{
+        text-align: center;
+        padding-top: 5px;
+        padding-bottom: 15px;
+      }
 
 
 /**/
@@ -257,6 +256,9 @@ main{
     }
     *{
         box-sizing:inherit ;
+    }
+    .fondo{
+        margin-right: 0;
     }
     span{
         font-size: 12px;

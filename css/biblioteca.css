@@ -50,7 +50,6 @@ div.titulo{
     text-align: center;
 }
 
-/*Barra Derecha*/
 .der iframe{
     border: 0;
     width: 100%;
@@ -81,8 +80,6 @@ div.calendario{
     border-radius: 3px;
     box-shadow: 0 1px 3px rgba(0,0,0,.1);
 }
-/**/
-
 article{
     height: auto;
     margin-top: 10px;
@@ -162,14 +159,14 @@ main{
             padding-right: 13px;
         }
         main{
-            flex: 100%;
-        }
-        .tablon{
-            margin-top: 75px;
-          }
-         body{
-            margin-bottom: 30%;
-         }
+        flex: 100%;
+    }
+    .tablon{
+        margin-top: 75px;
+    }
+    body{
+        margin-bottom: 30%;
+    }
         
 }
 
@@ -191,6 +188,7 @@ main{
         margin-left: 25%;
       }
       .fondo{
+          margin-left: 5%;
           margin-right: 5%;
           padding-right: 15px;
     }
@@ -199,6 +197,9 @@ main{
         padding-top: 5px;
         padding-bottom: 15px;
       }
+      main{
+        padding-left: 0;
+     }
      .foto:hover{
         transform: scale(2);
     }
