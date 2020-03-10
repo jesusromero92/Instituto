@@ -29,9 +29,15 @@ h4{
     padding-top: 5px;
     padding-bottom: 7px;
 }
+<<<<<<< HEAD
 
 
 
+=======
+
+
+
+>>>>>>> fadb1fd4f69eae4fa8433c8fe8123bd09b687719
   /*Galeria de imagenes*/
   .galeria {
     width: 90%;
@@ -79,7 +85,11 @@ h4{
       float: left;
       width: 25%;
       display: block;
+<<<<<<< HEAD
       overflow: hidden;
+=======
+      transition-duration: 0.4s;
+>>>>>>> fadb1fd4f69eae4fa8433c8fe8123bd09b687719
    
     }
 

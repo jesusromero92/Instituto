@@ -2,6 +2,7 @@ html {
     position: relative;
     min-height: 100%;
   }
+<<<<<<< HEAD
   body{
     margin: 0;
     margin-bottom: 10%;
@@ -10,12 +11,21 @@ html {
     background-color: rgb(209,208,206);
     bottom: 0;
     position: absolute;
+=======
+  .piepagina{
+    background-color: rgb(209,208,206);
+    position: absolute;
+    bottom: 0;
+>>>>>>> fadb1fd4f69eae4fa8433c8fe8123bd09b687719
     width: 100%;
     color: white;
     text-align: center;
     border-top: 5px solid #3EBF93;
     display: block;
+<<<<<<< HEAD
     margin-top: 30%;
+=======
+>>>>>>> fadb1fd4f69eae4fa8433c8fe8123bd09b687719
 }
 .piepagina p {
     text-align: center;
