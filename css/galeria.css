@@ -79,7 +79,7 @@ h4{
       float: left;
       width: 25%;
       display: block;
-      transition-duration: 0.4s;
+      overflow: hidden;
    
     }
 

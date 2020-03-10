@@ -4,8 +4,8 @@ html {
   }
   .piepagina{
     background-color: rgb(209,208,206);
-    position: absolute;
     bottom: 0;
+    position: absolute;
     width: 100%;
     color: white;
     text-align: center;

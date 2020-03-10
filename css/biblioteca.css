@@ -27,20 +27,23 @@ div.titulo{
     margin-left: 30px;
 }
 
+
 .contenido{
-    width: 90%;
+    width: 80%;
     height: auto;
-    background-color: rgb(250, 246, 246);
+    background-color: rgb(250, 246, 246, 0.7);
+    color: black;
     padding: 10px 30px 10px 30px;
     /*margin-top: 30px;*/
     display: block;
     float: left;
     border-top: 1px solid black;
+    margin-bottom: 30px;
 }
 .foto{
     transition: transform .2s;
-    width: 350px;
-    height: 200px;
+    width: 40%;
+    height: 30%px;
 }
 
 .foto:hover{
@@ -50,11 +53,15 @@ div.titulo{
     text-align: center;
 }
 
+/*Barra Derecha*/
 .der iframe{
     border: 0;
     width: 100%;
     height: 200px;
 
+}
+.der{
+    flex: 20%;
 }
 .sepaarticulos{
     padding-top: 30px;
@@ -80,6 +87,8 @@ div.calendario{
     border-radius: 3px;
     box-shadow: 0 1px 3px rgba(0,0,0,.1);
 }
+/**/
+
 article{
     height: auto;
     margin-top: 10px;
@@ -93,7 +102,7 @@ article{
     text-align: center;
     margin-bottom: 7%;
     margin-top: 55px;
-    margin-left: 20%;
+    margin-left: 15%;
     border-radius: 3px 3px 3px 3px;
     box-shadow: 3px 3px 3px 3px rgb(189, 185, 185);
     padding-left: 2%;
@@ -136,10 +145,12 @@ article{
 main{
     flex: 80%;
     padding-left: 3%;
+    background-image: url("../imagenes/biblioteca/fondobiblioteca.jpg");
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
 }
-.der{
-    flex: 15%;
-}
+
 
 /*Tablet*/
 @media screen and (max-width : 768px){
@@ -159,14 +170,14 @@ main{
             padding-right: 13px;
         }
         main{
-        flex: 100%;
-    }
-    .tablon{
-        margin-top: 75px;
-    }
-    body{
-        margin-bottom: 30%;
-    }
+            flex: 100%;
+        }
+        .tablon{
+            margin-top: 75px;
+          }
+         body{
+            margin-bottom: 30%;
+         }
         
 }
 
@@ -188,7 +199,6 @@ main{
         margin-left: 25%;
       }
       .fondo{
-          margin-left: 5%;
           margin-right: 5%;
           padding-right: 15px;
     }
@@ -197,9 +207,6 @@ main{
         padding-top: 5px;
         padding-bottom: 15px;
       }
-      main{
-        padding-left: 0;
-     }
      .foto:hover{
         transform: scale(2);
     }

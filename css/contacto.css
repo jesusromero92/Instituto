@@ -33,6 +33,10 @@ footer{height: 60px;}
     width: 100%;
     box-shadow: 1 1px 6px rgba(0,0,0,.1);
     background-color: rgb(223, 219, 219);
+    border-radius: 50px 50px 50px 50px;
+-moz-border-radius: 50px 50px 50px 50px;
+-webkit-border-radius: 50px 50px 50px 50px;
+border: 1px solid #000000;
 }
 .tituloform{
     padding-left: 46%;
@@ -79,22 +83,20 @@ legend{
     border-radius: 3px 3px 3px 3px;
     box-shadow: 3px 3px 3px 3px rgb(189, 185, 185);
 }
-.legend:hover{
-    background: linear-gradient(180deg,#ff8a00,#e52e71);
-}
+
 textarea{
-    margin: 0;
     margin-left: 10px;
     margin-top: 10px;
-    height: 50px;
-    width: 170px;
-    resize: none;
-    border: none;
+    height: 100px;
+    width: 50%;
+    color: red;
+    border: 1px dotted #000099;
     -moz-border-radius: 4px;
     -webkit-border-radius: 4px;
     -o-border-radius: 4px;
 }
-button{padding:8px 12px;
+button{
+    padding:8px 12px;
     font-family:'Montserrat',sans-serif;
     border:2px solid #78788c;
     background:0;
@@ -102,9 +104,11 @@ button{padding:8px 12px;
     cursor:pointer;
     transition:all .3s;
     margin-left:7%;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    border-radius: 88px 88px 88px 86px;
 }
-button:hover{background:#78788c;
+button:hover{
+    background:#78788c;
     color:#fff}
 
 input[type=text], input[type=mail]{
@@ -135,7 +139,7 @@ input:focus, input.form-control:focus, textarea {
 }
 ::-webkit-input-placeholder {
     text-align: center;
-    padding-top: 13px;
+    padding-top: 35px;
  }
 
 
@@ -188,11 +192,11 @@ div.titulo{
           box-shadow: 3px 3px 3px 3px rgb(189, 185, 185);
           padding-left: 2%;
         }
-      h4{
-        text-align: center;
-        padding-top: 5px;
-        padding-bottom: 15px;
-      }
+h4{
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 15px;
+    }
 
 
 /**/
@@ -236,8 +240,15 @@ main{
 
 /*Movil*/
 @media screen and (max-width : 425px){
-    label{
-        margin-top: 10px;
+    input{
+        display:block;
+        text-align: center;
+        margin-left: 60px;
+        margin-bottom: 7px;
+    }
+    textarea{
+        display: block;
+        margin-left: 25%;
     }
     .tituloform{
         font-size: 13px;
@@ -251,14 +262,11 @@ main{
         padding-left: 0;
     }
     .contenido{
-        margin-left: 8%;
+        margin-left: 12%;
         padding:0;
     }
     *{
         box-sizing:inherit ;
-    }
-    .fondo{
-        margin-right: 0;
     }
     span{
         font-size: 12px;
